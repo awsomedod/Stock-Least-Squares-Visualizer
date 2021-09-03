@@ -12,7 +12,7 @@ degree_polynomial = int(input("With what degree polynomial would you like to pre
 stk = yf.Ticker(stock)
 
 # get historical market data   gets closing price
-hist = stk.history(period="1y")["Close"]
+hist = stk.history(period=days_in_past)["Close"]
 
 #reverse order of stock data
 lines = []
